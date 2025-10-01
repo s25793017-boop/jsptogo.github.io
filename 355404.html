@@ -1,13 +1,9 @@
-// 입력 초
-const secondVar = 1000;
+public class TimeConversion {
+    public static void main(String[] args) {
+        int secondVar = 1000;           // 총 초
+        int minOut = secondVar / 60;    // 분 계산
+        int secondOut = secondVar % 60; // 남은 초 계산
 
-// 분 계산 (몫)
-// Math.floor()를 사용하여 소수점 아래를 버리고 정수만 취합니다.
-const minOut = Math.floor(secondVar / 60);
-
-// 남은 초 계산 (나머지)
-const secondOut = secondVar % 60;
-
-console.log(`총 ${secondVar}초는: ${minOut}분 ${secondOut}초입니다.`);
-
-// 결과: 총 1000초는: 16분 40초입니다.
+        System.out.println("총 " + secondVar + "초는: " + minOut + "분 " + secondOut + "초입니다.");
+    }
+}
